@@ -39,25 +39,25 @@ export default function EnvironmentalTaxes() {
             EXCISE 720
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <button className="hover:bg-[#005a7a] p-2 rounded">
+        <div className="flex items-center gap-1">
+          <button className="hover:bg-[#005a7a] p-2 rounded" title="User Profile">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
+              <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
             </svg>
           </button>
-          <button className="hover:bg-[#005a7a] p-2 rounded">
+          <button className="hover:bg-[#005a7a] p-2 rounded" title="Help">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd"/>
             </svg>
           </button>
-          <button className="hover:bg-[#005a7a] p-2 rounded">
+          <button className="hover:bg-[#005a7a] p-2 rounded" title="Settings">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd"/>
             </svg>
           </button>
-          <button className="hover:bg-[#005a7a] p-2 rounded">
+          <button className="hover:bg-[#005a7a] p-2 rounded" title="Logout">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+              <path fillRule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clipRule="evenodd"/>
             </svg>
           </button>
         </div>
@@ -65,32 +65,33 @@ export default function EnvironmentalTaxes() {
 
       {/* Navigation Tabs */}
       <nav className="bg-[#1a6b82] text-white shadow-lg">
-        <div className="flex">
-          <button className="flex items-center gap-2 px-6 py-4 hover:bg-[#145566] transition-colors">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+        <div className="flex justify-center">
+          <button className="flex items-center gap-3 px-8 py-4 hover:bg-[#004b66] transition-colors border-b-4 border-transparent hover:border-white">
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
               <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd"/>
             </svg>
-            <span className="font-medium">My Filing</span>
+            <span className="font-medium text-base">My Filing</span>
           </button>
-          <button className="flex items-center gap-2 px-6 py-4 hover:bg-[#145566] transition-colors">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
+          <button className="flex items-center gap-3 px-8 py-4 hover:bg-[#004b66] transition-colors border-b-4 border-transparent hover:border-white">
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd"/>
+              <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
             </svg>
-            <span className="font-medium">My Business</span>
+            <span className="font-medium text-base">My Business</span>
           </button>
-          <button className="flex items-center gap-2 px-6 py-4 bg-white text-[#004b66] hover:bg-gray-50 transition-colors">
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+          <button className="flex items-center gap-3 px-8 py-4 bg-white/70 text-[#1a6b82] hover:bg-white/90 transition-colors border-b-4 border-white shadow-sm">
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clipRule="evenodd"/>
             </svg>
-            <span className="font-medium">Add Filing</span>
+            <span className="font-bold text-base">Add Filing</span>
           </button>
         </div>
       </nav>
 
       {/* Main Content */}
-      <main className="container mx-auto px-6 py-8">
-        <div className="flex items-center justify-between mb-6">
+      <main className="container mx-auto px-16 py-10">
+        <div className="flex items-center justify-between mb-8">
           <div>
             <h1 className="text-3xl font-bold text-[#0d1a2b]">Environmental Taxes</h1>
             <div className="text-[#004b66] text-sm mt-2 flex items-center gap-2">
@@ -115,11 +116,10 @@ export default function EnvironmentalTaxes() {
         {/* Card Section */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           {/* Card Header */}
-          <div className="bg-[#004b66] text-white px-6 py-4 flex items-center justify-between">
-            <h2 className="text-xl font-semibold">98 - Ozone Depleting Chemicals (ODCs)</h2>
+          <div className="bg-[#1a5566] text-white px-8 py-5 flex items-center justify-between rounded-t-lg">
+            <h2 className="text-3xl font-semibold">98 - Ozone Depleting Chemicals (ODCs)</h2>
             <div className="text-right">
-              <div className="text-sm">Tax End Month and Tax Year:</div>
-              <div className="text-lg font-semibold">March 2025</div>
+              <div className="text-xl font-normal">Tax End Month and Tax Year: <span className="font-bold">March 2025</span></div>
             </div>
           </div>
 
@@ -141,24 +141,25 @@ export default function EnvironmentalTaxes() {
           {/* Table */}
           <div className="p-6">
             <div className="overflow-x-auto">
-              <table className="w-full">
+              <table className="w-full border-collapse">
                 <thead>
-                  <tr className="bg-[#004b66] text-white">
-                    <th className="px-4 py-3 text-left font-semibold">Tax Date</th>
-                    <th className="px-4 py-3 text-left font-semibold">ODCs Name</th>
-                    <th className="px-4 py-3 text-left font-semibold">No.of Pounds</th>
-                    <th className="px-4 py-3 text-left font-semibold">Tax Rate</th>
-                    <th className="px-4 py-3 text-left font-semibold">Tax Amount</th>
-                    <th className="px-4 py-3 text-left font-semibold">Action</th>
+                  <tr className="bg-[#1a6b82] text-white">
+                    <th className="px-4 py-3 text-left font-semibold border-r border-white first:rounded-tl-lg">Tax Date</th>
+                    <th className="px-4 py-3 text-left font-semibold border-r border-white">ODCs Name</th>
+                    <th className="px-4 py-3 text-left font-semibold border-r border-white">No.of Pounds</th>
+                    <th className="px-4 py-3 text-left font-semibold border-r border-white">Tax Rate</th>
+                    <th className="px-4 py-3 text-left font-semibold border-r border-white">Tax Amount</th>
+                    <th className="px-4 py-3 text-left font-semibold last:rounded-tr-lg">Action</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className="bg-white">
                   {rows.map((row, index) => (
-                    <tr key={row.id} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                    <tr key={row.id} className="border-b border-gray-200 last:border-b-0">
                       <td className="px-4 py-3">
                         <input
-                          type="date"
-                          className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004b66]"
+                          type="text"
+                          placeholder=""
+                          className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#1a6b82] focus:border-[#1a6b82]"
                           value={row.taxDate}
                           onChange={(e) => {
                             const newRows = [...rows];
@@ -169,7 +170,7 @@ export default function EnvironmentalTaxes() {
                       </td>
                       <td className="px-4 py-3">
                         <select
-                          className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004b66] text-gray-500"
+                          className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#1a6b82] focus:border-[#1a6b82] text-gray-500 bg-white"
                           value={row.odcName}
                           onChange={(e) => {
                             const newRows = [...rows];
@@ -185,7 +186,8 @@ export default function EnvironmentalTaxes() {
                       <td className="px-4 py-3">
                         <input
                           type="text"
-                          className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#004b66]"
+                          placeholder=""
+                          className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#1a6b82] focus:border-[#1a6b82]"
                           value={row.pounds}
                           onChange={(e) => {
                             const newRows = [...rows];
@@ -197,7 +199,7 @@ export default function EnvironmentalTaxes() {
                       <td className="px-4 py-3">
                         <input
                           type="text"
-                          className="w-full px-3 py-2 border border-gray-300 rounded bg-gray-100 text-gray-600"
+                          className="w-full px-3 py-2 border border-gray-300 rounded bg-gray-50 text-gray-700 text-center"
                           value={row.taxRate}
                           readOnly
                         />
@@ -205,7 +207,7 @@ export default function EnvironmentalTaxes() {
                       <td className="px-4 py-3">
                         <input
                           type="text"
-                          className="w-full px-3 py-2 border border-gray-300 rounded bg-gray-100 text-gray-600"
+                          className="w-full px-3 py-2 border border-gray-300 rounded bg-gray-50 text-gray-700 text-center"
                           value={row.taxAmount}
                           readOnly
                         />
@@ -213,7 +215,7 @@ export default function EnvironmentalTaxes() {
                       <td className="px-4 py-3 text-center">
                         <button
                           onClick={() => deleteRow(row.id)}
-                          className="text-white bg-[#004b66] hover:bg-[#005a7a] p-2 rounded transition-colors"
+                          className="text-white bg-[#1a6b82] hover:bg-[#145566] p-2 rounded transition-colors inline-flex items-center justify-center"
                         >
                           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clipRule="evenodd"/>
@@ -229,21 +231,21 @@ export default function EnvironmentalTaxes() {
             {/* Action Buttons */}
             <div className="flex items-center justify-between mt-6">
               <div className="flex gap-3">
-                <button className="flex items-center gap-2 bg-[#004b66] text-white px-6 py-2.5 rounded-lg hover:bg-[#005a7a] transition-colors shadow-md font-medium">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M7.707 10.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V6h5a2 2 0 012 2v7a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h5v5.586l-1.293-1.293zM9 4a1 1 0 012 0v2H9V4z"/>
+                <button className="flex items-center gap-2 bg-[#1a5566] text-white px-5 py-2 rounded hover:bg-[#145566] transition-colors font-medium text-sm">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd"/>
                   </svg>
                   Save
                 </button>
-                <button className="flex items-center gap-2 bg-white text-[#004b66] border-2 border-[#004b66] px-6 py-2.5 rounded-lg hover:bg-gray-50 transition-colors font-medium">
+                <button className="flex items-center gap-2 bg-white text-[#1a5566] border-2 border-[#1a6b82] px-5 py-2 rounded-md hover:bg-gray-50 transition-colors font-medium text-sm">
                   Proceed to Summary
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"/>
                   </svg>
                 </button>
-                <button className="flex items-center gap-2 bg-white text-[#004b66] border-2 border-[#004b66] px-6 py-2.5 rounded-lg hover:bg-gray-50 transition-colors font-medium">
+                <button className="flex items-center gap-2 bg-white text-[#1a5566] border-2 border-[#1a6b82] px-5 py-2 rounded-md hover:bg-gray-50 transition-colors font-medium text-sm">
                   Proceed to Deposit
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"/>
                   </svg>
                 </button>
