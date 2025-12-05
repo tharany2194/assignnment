@@ -96,9 +96,13 @@ export default function EnvironmentalTaxes() {
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#094359]">Environmental Taxes</h1>
             <div className="text-[#094359] text-xs sm:text-sm mt-2 flex flex-wrap items-center gap-1 sm:gap-2 font-semibold">
               <span className="hover:underline cursor-pointer">Tax Year / Form 720</span>
-              <span>✓</span>
+              <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"/>
+              </svg>
               <span className="hover:underline cursor-pointer">/ Environmental Taxes</span>
-              <span>✓</span>
+              <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"/>
+              </svg>
               <span>/ 98 - Ozone Depleting Chemicals (ODCs)</span>
             </div>
           </div>
