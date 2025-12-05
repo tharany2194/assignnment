@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function EnvironmentalTaxes() {
   const router = useRouter();
   const [rows, setRows] = useState([
-    { id: 1, taxDate: '', odcName: '', pounds: '', taxRate: '0.000', taxAmount: '0.00' }
+    { id: 1, taxDate: '', odcName: '', pounds: '', taxRate: '$0.000', taxAmount: '$0.00' }
   ]);
   const [noExcise, setNoExcise] = useState(false);
 
@@ -16,8 +16,8 @@ export default function EnvironmentalTaxes() {
       taxDate: '',
       odcName: '',
       pounds: '',
-      taxRate: '0.000',
-      taxAmount: '0.00'
+      taxRate: '$.000',
+      taxAmount: '$0.00'
     };
     setRows([...rows, newRow]);
   };
@@ -33,9 +33,9 @@ export default function EnvironmentalTaxes() {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Header */}
-      <header className="bg-[#004b66] text-white py-3 px-6 flex items-center justify-between shadow-md">
+      <header className="bg-[#004B66] text-white py-3 px-6 flex items-center justify-between shadow-md">
         <div className="flex items-center">
-          <div className="bg-white text-[#004b66] px-4 py-1 rounded-md font-semibold text-sm">
+          <div className="bg-white text-[#094359] px-4 py-1 rounded-md font-semibold text-sm">
             EXCISE 720
           </div>
         </div>
@@ -64,7 +64,7 @@ export default function EnvironmentalTaxes() {
       </header>
 
       {/* Navigation Tabs */}
-      <nav className="bg-[#1a6b82] text-white shadow-lg">
+      <nav className="bg-[#0C688D] text-white shadow-lg">
         <div className="flex justify-center">
           <button className="flex items-center gap-3 px-8 py-4 hover:bg-[#004b66] transition-colors border-b-4 border-transparent hover:border-white">
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
@@ -80,7 +80,7 @@ export default function EnvironmentalTaxes() {
             </svg>
             <span className="font-medium text-base">My Business</span>
           </button>
-          <button className="flex items-center gap-3 px-8 py-4 bg-white/70 text-[#1a6b82] hover:bg-white/90 transition-colors border-b-4 border-white shadow-sm">
+          <button className="flex items-center gap-3 px-8 py-4 bg-white/50 text-white hover:bg-white/70 transition-colors border-b-4 border-white shadow-sm">
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V8z" clipRule="evenodd"/>
             </svg>
@@ -93,8 +93,8 @@ export default function EnvironmentalTaxes() {
       <main className="container mx-auto px-16 py-10">
         <div className="flex items-center justify-between mb-8">
           <div>
-            <h1 className="text-3xl font-bold text-[#0d1a2b]">Environmental Taxes</h1>
-            <div className="text-[#004b66] text-sm mt-2 flex items-center gap-2">
+            <h1 className="text-3xl font-bold text-[#094359]">Environmental Taxes</h1>
+            <div className="text-[#094359] text-sm mt-2 flex items-center gap-2 font-semibold">
               <span className="hover:underline cursor-pointer">Tax Year / Form 720</span>
               <span>✓</span>
               <span className="hover:underline cursor-pointer">/ Environmental Taxes</span>
@@ -116,23 +116,23 @@ export default function EnvironmentalTaxes() {
         {/* Card Section */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           {/* Card Header */}
-          <div className="bg-[#1a5566] text-white px-8 py-5 flex items-center justify-between rounded-t-lg">
-            <h2 className="text-3xl font-semibold">98 - Ozone Depleting Chemicals (ODCs)</h2>
+          <div className="bg-[#094359] text-white px-8 py-5 flex items-center justify-between rounded-t-lg">
+            <h2 className="text-2xl font-semibold">98 - Ozone Depleting Chemicals (ODCs)</h2>
             <div className="text-right">
               <div className="text-xl font-normal">Tax End Month and Tax Year: <span className="font-bold">March 2025</span></div>
             </div>
           </div>
 
           {/* Checkbox */}
-          <div className="px-6 py-4 bg-gray-50 border-b">
+          <div className="px-6 py-4">
             <label className="flex items-center gap-3 cursor-pointer">
               <input
                 type="checkbox"
                 checked={noExcise}
                 onChange={(e) => setNoExcise(e.target.checked)}
-                className="w-5 h-5 border-2 border-[#004b66] rounded focus:ring-2 focus:ring-[#004b66] cursor-pointer"
+                className="w-5 h-5 border-2 border-[#094359] rounded focus:ring-2 focus:ring-[#094359] cursor-pointer"
               />
-              <span className="text-[#0d1a2b] font-medium">
+              <span className="text-[#094359] font-bold">
                 The Business has no excise - taxable activity (file as "None")
               </span>
             </label>
@@ -140,16 +140,16 @@ export default function EnvironmentalTaxes() {
 
           {/* Table */}
           <div className="p-6">
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto border border-gray-300 rounded-lg shadow-sm">
               <table className="w-full border-collapse">
                 <thead>
-                  <tr className="bg-[#1a6b82] text-white">
+                  <tr className="bg-[#0C688D] text-white">
                     <th className="px-4 py-3 text-left font-semibold border-r border-white first:rounded-tl-lg">Tax Date</th>
                     <th className="px-4 py-3 text-left font-semibold border-r border-white">ODCs Name</th>
                     <th className="px-4 py-3 text-left font-semibold border-r border-white">No.of Pounds</th>
                     <th className="px-4 py-3 text-left font-semibold border-r border-white">Tax Rate</th>
                     <th className="px-4 py-3 text-left font-semibold border-r border-white">Tax Amount</th>
-                    <th className="px-4 py-3 text-left font-semibold last:rounded-tr-lg">Action</th>
+                    <th className="px-8 py-3 text-left font-semibold last:rounded-tr-lg w-40">Action</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white">
@@ -215,7 +215,7 @@ export default function EnvironmentalTaxes() {
                       <td className="px-4 py-3 text-center">
                         <button
                           onClick={() => deleteRow(row.id)}
-                          className="text-white bg-[#1a6b82] hover:bg-[#145566] p-2 rounded transition-colors inline-flex items-center justify-center"
+                          className="text-[#094359] hover:text-[#0C688D] p-2 transition-colors inline-flex items-center justify-center"
                         >
                           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clipRule="evenodd"/>
@@ -233,17 +233,17 @@ export default function EnvironmentalTaxes() {
               <div className="flex gap-3">
                 <button className="flex items-center gap-2 bg-[#1a5566] text-white px-5 py-2 rounded hover:bg-[#145566] transition-colors font-medium text-sm">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd"/>
+                    <path d="M7.707 10.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V6h5a2 2 0 012 2v7a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h5v5.586l-1.293-1.293zM9 4a1 1 0 012 0v2H9V4z"/>
                   </svg>
                   Save
                 </button>
-                <button className="flex items-center gap-2 bg-white text-[#1a5566] border-2 border-[#1a6b82] px-5 py-2 rounded-md hover:bg-gray-50 transition-colors font-medium text-sm">
+                <button className="flex items-center gap-2 bg-white text-[#094359] border-[3px] border-[#0C688D] px-5 py-2 rounded-md hover:bg-gray-50 transition-colors font-bold text-sm">
                   Proceed to Summary
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"/>
                   </svg>
                 </button>
-                <button className="flex items-center gap-2 bg-white text-[#1a5566] border-2 border-[#1a6b82] px-5 py-2 rounded-md hover:bg-gray-50 transition-colors font-medium text-sm">
+                <button className="flex items-center gap-2 bg-white text-[#094359] border-[3px] border-[#0C688D] px-5 py-2 rounded-md hover:bg-gray-50 transition-colors font-bold text-sm">
                   Proceed to Deposit
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"/>
